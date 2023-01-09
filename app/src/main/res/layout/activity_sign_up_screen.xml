@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/signInScreenColour"
+    android:layout_height="match_parent"
+    tools:context=".signUpScreen">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/remove"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account And Enjoy Playing"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="italic"
+        android:layout_marginBottom="-9dp"/>
+
+    <EditText
+
+        android:id="@+id/userNameField"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button_two"
+        android:hint="Name"
+        android:maxLength="20"
+        android:padding="20dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/userEmailField"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/userNameField"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_two"
+        android:hint="Email"
+        android:maxLength="20"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/userPasswordField"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/userEmailField"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_two"
+        android:hint="Password"
+        android:maxLength="20"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/userConfirmPasswordField"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/userPasswordField"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button_two"
+        android:hint="Confirm Password"
+        android:padding="20dp"
+        android:maxLength="20"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button_two"
+        android:layout_below="@+id/userConfirmPasswordField"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"></Button>
+
+    <TextView
+        android:id="@+id/AlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUpButton"
+        android:text="Already Registered ? Sign In"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"></TextView>
+
+
+
+
+
+
+
+</RelativeLayout>
